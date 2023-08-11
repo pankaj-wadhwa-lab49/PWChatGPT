@@ -67,6 +67,7 @@ class ViewModel: ObservableObject {
     
     @MainActor
         func clearMessages() {
+            api.deleteHistoryList()
             withAnimation { [weak self] in
                 self?.messages = []
             }

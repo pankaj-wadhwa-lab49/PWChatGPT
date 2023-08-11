@@ -128,4 +128,8 @@ class ChatGPTAPI {
         self.historyList.append(.init(role: "user", content: userText))
         self.historyList.append(.init(role: "assistant", content: responseText))
     }
+    
+    func deleteHistoryList() {
+        self.historyList.removeAll()
+    }
 }

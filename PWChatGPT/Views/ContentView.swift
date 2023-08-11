@@ -81,6 +81,11 @@ struct ContentView: View {
                         .rotationEffect(.degrees(45))
                         .font(.system(size: 30))
                 }
+                #if os(macOS)
+                .buttonStyle(.borderless)
+                .keyboardShortcut(.defaultAction)
+                .foregroundColor(.accentColor)
+                #endif
                 .disabled(vm.inputMessage.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
 
             }

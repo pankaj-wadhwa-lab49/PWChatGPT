@@ -11,6 +11,16 @@
 		1261C1F82A853FCE007F6C0E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261C1F72A853FCE007F6C0E /* ViewModel.swift */; };
 		1261C1FA2A8541FE007F6C0E /* DotLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261C1F92A8541FE007F6C0E /* DotLoadingView.swift */; };
 		1261C1FC2A8545D6007F6C0E /* MessageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261C1FB2A8545D6007F6C0E /* MessageRowView.swift */; };
+		1261C2042A863F68007F6C0E /* PWChatGPTMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261C2032A863F68007F6C0E /* PWChatGPTMacApp.swift */; };
+		1261C2082A863F6C007F6C0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1261C2072A863F6C007F6C0E /* Assets.xcassets */; };
+		1261C20B2A863F6C007F6C0E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1261C20A2A863F6C007F6C0E /* Preview Assets.xcassets */; };
+		1261C2102A863F83007F6C0E /* MessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261C1F52A853CB8007F6C0E /* MessageRow.swift */; };
+		1261C2112A863F83007F6C0E /* ChatGPTAPIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB3A5122A83CCE800DF02D2 /* ChatGPTAPIModels.swift */; };
+		1261C2122A863F83007F6C0E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261C1F72A853FCE007F6C0E /* ViewModel.swift */; };
+		1261C2132A863F83007F6C0E /* ChatGPTAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB3A50E2A83998B00DF02D2 /* ChatGPTAPI.swift */; };
+		1261C2142A863FCC007F6C0E /* MessageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261C1FB2A8545D6007F6C0E /* MessageRowView.swift */; };
+		1261C2152A863FCC007F6C0E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB3A4E52A837CC900DF02D2 /* ContentView.swift */; };
+		1261C2162A863FCC007F6C0E /* DotLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261C1F92A8541FE007F6C0E /* DotLoadingView.swift */; };
 		2CB3A4E42A837CC900DF02D2 /* PWChatGPTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB3A4E32A837CC900DF02D2 /* PWChatGPTApp.swift */; };
 		2CB3A4E62A837CC900DF02D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB3A4E52A837CC900DF02D2 /* ContentView.swift */; };
 		2CB3A4E82A837CCB00DF02D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB3A4E72A837CCB00DF02D2 /* Assets.xcassets */; };
@@ -44,6 +54,11 @@
 		1261C1F72A853FCE007F6C0E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		1261C1F92A8541FE007F6C0E /* DotLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotLoadingView.swift; sourceTree = "<group>"; };
 		1261C1FB2A8545D6007F6C0E /* MessageRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRowView.swift; sourceTree = "<group>"; };
+		1261C2012A863F68007F6C0E /* PWChatGPTMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PWChatGPTMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1261C2032A863F68007F6C0E /* PWChatGPTMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWChatGPTMacApp.swift; sourceTree = "<group>"; };
+		1261C2072A863F6C007F6C0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1261C20A2A863F6C007F6C0E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1261C20C2A863F6C007F6C0E /* PWChatGPTMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PWChatGPTMac.entitlements; sourceTree = "<group>"; };
 		2CB3A4E02A837CC900DF02D2 /* PWChatGPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PWChatGPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB3A4E32A837CC900DF02D2 /* PWChatGPTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWChatGPTApp.swift; sourceTree = "<group>"; };
 		2CB3A4E52A837CC900DF02D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +76,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1261C1FE2A863F68007F6C0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2CB3A4DD2A837CC900DF02D2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -85,12 +107,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1261C2022A863F68007F6C0E /* PWChatGPTMac */ = {
+			isa = PBXGroup;
+			children = (
+				1261C2032A863F68007F6C0E /* PWChatGPTMacApp.swift */,
+				1261C2072A863F6C007F6C0E /* Assets.xcassets */,
+				1261C20C2A863F6C007F6C0E /* PWChatGPTMac.entitlements */,
+				1261C2092A863F6C007F6C0E /* Preview Content */,
+			);
+			path = PWChatGPTMac;
+			sourceTree = "<group>";
+		};
+		1261C2092A863F6C007F6C0E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1261C20A2A863F6C007F6C0E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		2CB3A4D72A837CC900DF02D2 = {
 			isa = PBXGroup;
 			children = (
 				2CB3A4E22A837CC900DF02D2 /* PWChatGPT */,
 				2CB3A4F42A837CCC00DF02D2 /* PWChatGPTTests */,
 				2CB3A4FE2A837CCC00DF02D2 /* PWChatGPTUITests */,
+				1261C2022A863F68007F6C0E /* PWChatGPTMac */,
 				2CB3A4E12A837CC900DF02D2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,6 +143,7 @@
 				2CB3A4E02A837CC900DF02D2 /* PWChatGPT.app */,
 				2CB3A4F12A837CCC00DF02D2 /* PWChatGPTTests.xctest */,
 				2CB3A4FB2A837CCC00DF02D2 /* PWChatGPTUITests.xctest */,
+				1261C2012A863F68007F6C0E /* PWChatGPTMac.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,6 +211,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1261C2002A863F68007F6C0E /* PWChatGPTMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1261C20F2A863F6C007F6C0E /* Build configuration list for PBXNativeTarget "PWChatGPTMac" */;
+			buildPhases = (
+				1261C1FD2A863F68007F6C0E /* Sources */,
+				1261C1FE2A863F68007F6C0E /* Frameworks */,
+				1261C1FF2A863F68007F6C0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PWChatGPTMac;
+			productName = PWChatGPTMac;
+			productReference = 1261C2012A863F68007F6C0E /* PWChatGPTMac.app */;
+			productType = "com.apple.product-type.application";
+		};
 		2CB3A4DF2A837CC900DF02D2 /* PWChatGPT */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CB3A5052A837CCC00DF02D2 /* Build configuration list for PBXNativeTarget "PWChatGPT" */;
@@ -231,6 +291,9 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					1261C2002A863F68007F6C0E = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					2CB3A4DF2A837CC900DF02D2 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -260,11 +323,21 @@
 				2CB3A4DF2A837CC900DF02D2 /* PWChatGPT */,
 				2CB3A4F02A837CCC00DF02D2 /* PWChatGPTTests */,
 				2CB3A4FA2A837CCC00DF02D2 /* PWChatGPTUITests */,
+				1261C2002A863F68007F6C0E /* PWChatGPTMac */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1261C1FF2A863F68007F6C0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1261C20B2A863F6C007F6C0E /* Preview Assets.xcassets in Resources */,
+				1261C2082A863F6C007F6C0E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2CB3A4DE2A837CC900DF02D2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -291,6 +364,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1261C1FD2A863F68007F6C0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1261C2132A863F83007F6C0E /* ChatGPTAPI.swift in Sources */,
+				1261C2122A863F83007F6C0E /* ViewModel.swift in Sources */,
+				1261C2152A863FCC007F6C0E /* ContentView.swift in Sources */,
+				1261C2042A863F68007F6C0E /* PWChatGPTMacApp.swift in Sources */,
+				1261C2142A863FCC007F6C0E /* MessageRowView.swift in Sources */,
+				1261C2112A863F83007F6C0E /* ChatGPTAPIModels.swift in Sources */,
+				1261C2102A863F83007F6C0E /* MessageRow.swift in Sources */,
+				1261C2162A863FCC007F6C0E /* DotLoadingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2CB3A4DC2A837CC900DF02D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -339,6 +427,64 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1261C20D2A863F6C007F6C0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PWChatGPTMac/PWChatGPTMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PWChatGPTMac/Preview Content\"";
+				DEVELOPMENT_TEAM = 4J9S92M97T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pankaj.PWChatGPTMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1261C20E2A863F6C007F6C0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PWChatGPTMac/PWChatGPTMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PWChatGPTMac/Preview Content\"";
+				DEVELOPMENT_TEAM = 4J9S92M97T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pankaj.PWChatGPTMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		2CB3A5032A837CCC00DF02D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -474,7 +620,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pankajwadhwa.PWChatGPTT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -512,7 +658,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pankajwadhwa.PWChatGPT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -613,6 +759,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1261C20F2A863F6C007F6C0E /* Build configuration list for PBXNativeTarget "PWChatGPTMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1261C20D2A863F6C007F6C0E /* Debug */,
+				1261C20E2A863F6C007F6C0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2CB3A4DB2A837CC900DF02D2 /* Build configuration list for PBXProject "PWChatGPT" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
