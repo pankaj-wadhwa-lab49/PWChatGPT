@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1261C1F62A853CB8007F6C0E /* MessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261C1F52A853CB8007F6C0E /* MessageRow.swift */; };
+		1261C1F82A853FCE007F6C0E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261C1F72A853FCE007F6C0E /* ViewModel.swift */; };
+		1261C1FA2A8541FE007F6C0E /* DotLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261C1F92A8541FE007F6C0E /* DotLoadingView.swift */; };
+		1261C1FC2A8545D6007F6C0E /* MessageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261C1FB2A8545D6007F6C0E /* MessageRowView.swift */; };
 		2CB3A4E42A837CC900DF02D2 /* PWChatGPTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB3A4E32A837CC900DF02D2 /* PWChatGPTApp.swift */; };
 		2CB3A4E62A837CC900DF02D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB3A4E52A837CC900DF02D2 /* ContentView.swift */; };
 		2CB3A4E82A837CCB00DF02D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB3A4E72A837CCB00DF02D2 /* Assets.xcassets */; };
@@ -14,6 +18,8 @@
 		2CB3A4F62A837CCC00DF02D2 /* PWChatGPTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB3A4F52A837CCC00DF02D2 /* PWChatGPTTests.swift */; };
 		2CB3A5002A837CCC00DF02D2 /* PWChatGPTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB3A4FF2A837CCC00DF02D2 /* PWChatGPTUITests.swift */; };
 		2CB3A5022A837CCC00DF02D2 /* PWChatGPTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB3A5012A837CCC00DF02D2 /* PWChatGPTUITestsLaunchTests.swift */; };
+		2CB3A50F2A83998B00DF02D2 /* ChatGPTAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB3A50E2A83998B00DF02D2 /* ChatGPTAPI.swift */; };
+		2CB3A5132A83CCE800DF02D2 /* ChatGPTAPIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB3A5122A83CCE800DF02D2 /* ChatGPTAPIModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1261C1F52A853CB8007F6C0E /* MessageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRow.swift; sourceTree = "<group>"; };
+		1261C1F72A853FCE007F6C0E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		1261C1F92A8541FE007F6C0E /* DotLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotLoadingView.swift; sourceTree = "<group>"; };
+		1261C1FB2A8545D6007F6C0E /* MessageRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRowView.swift; sourceTree = "<group>"; };
 		2CB3A4E02A837CC900DF02D2 /* PWChatGPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PWChatGPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB3A4E32A837CC900DF02D2 /* PWChatGPTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWChatGPTApp.swift; sourceTree = "<group>"; };
 		2CB3A4E52A837CC900DF02D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +55,9 @@
 		2CB3A4FB2A837CCC00DF02D2 /* PWChatGPTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PWChatGPTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB3A4FF2A837CCC00DF02D2 /* PWChatGPTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWChatGPTUITests.swift; sourceTree = "<group>"; };
 		2CB3A5012A837CCC00DF02D2 /* PWChatGPTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWChatGPTUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2CB3A50E2A83998B00DF02D2 /* ChatGPTAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTAPI.swift; sourceTree = "<group>"; };
+		2CB3A5122A83CCE800DF02D2 /* ChatGPTAPIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTAPIModels.swift; sourceTree = "<group>"; };
+		2CB3A5142A83F4E700DF02D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,10 +108,12 @@
 		2CB3A4E22A837CC900DF02D2 /* PWChatGPT */ = {
 			isa = PBXGroup;
 			children = (
+				2CB3A5112A8399C000DF02D2 /* Views */,
+				2CB3A5102A83999500DF02D2 /* HelperClasses */,
 				2CB3A4E32A837CC900DF02D2 /* PWChatGPTApp.swift */,
-				2CB3A4E52A837CC900DF02D2 /* ContentView.swift */,
 				2CB3A4E72A837CCB00DF02D2 /* Assets.xcassets */,
 				2CB3A4E92A837CCB00DF02D2 /* PWChatGPT.entitlements */,
+				2CB3A5142A83F4E700DF02D2 /* Info.plist */,
 				2CB3A4EA2A837CCB00DF02D2 /* Preview Content */,
 			);
 			path = PWChatGPT;
@@ -127,6 +142,27 @@
 				2CB3A5012A837CCC00DF02D2 /* PWChatGPTUITestsLaunchTests.swift */,
 			);
 			path = PWChatGPTUITests;
+			sourceTree = "<group>";
+		};
+		2CB3A5102A83999500DF02D2 /* HelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+				2CB3A50E2A83998B00DF02D2 /* ChatGPTAPI.swift */,
+				2CB3A5122A83CCE800DF02D2 /* ChatGPTAPIModels.swift */,
+				1261C1F52A853CB8007F6C0E /* MessageRow.swift */,
+				1261C1F72A853FCE007F6C0E /* ViewModel.swift */,
+			);
+			path = HelperClasses;
+			sourceTree = "<group>";
+		};
+		2CB3A5112A8399C000DF02D2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2CB3A4E52A837CC900DF02D2 /* ContentView.swift */,
+				1261C1FB2A8545D6007F6C0E /* MessageRowView.swift */,
+				1261C1F92A8541FE007F6C0E /* DotLoadingView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +295,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CB3A50F2A83998B00DF02D2 /* ChatGPTAPI.swift in Sources */,
+				1261C1FA2A8541FE007F6C0E /* DotLoadingView.swift in Sources */,
 				2CB3A4E62A837CC900DF02D2 /* ContentView.swift in Sources */,
+				2CB3A5132A83CCE800DF02D2 /* ChatGPTAPIModels.swift in Sources */,
 				2CB3A4E42A837CC900DF02D2 /* PWChatGPTApp.swift in Sources */,
+				1261C1F82A853FCE007F6C0E /* ViewModel.swift in Sources */,
+				1261C1F62A853CB8007F6C0E /* MessageRow.swift in Sources */,
+				1261C1FC2A8545D6007F6C0E /* MessageRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,8 +457,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PWChatGPT/Preview Content\"";
+				DEVELOPMENT_TEAM = 4J9S92M97T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PWChatGPT/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -432,7 +476,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pankajwadhwa.PWChatGPT;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pankajwadhwa.PWChatGPTT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -451,8 +495,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PWChatGPT/Preview Content\"";
+				DEVELOPMENT_TEAM = 4J9S92M97T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PWChatGPT/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

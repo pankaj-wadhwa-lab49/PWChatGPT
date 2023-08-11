@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct PWChatGPTApp: App {
+    @StateObject var vm = ViewModel(api: ChatGPTAPI())
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                ContentView(vm: vm)
+            }
         }
     }
 }
