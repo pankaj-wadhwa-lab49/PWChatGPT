@@ -9,8 +9,7 @@ import Foundation
 
 class ChatGPTAPI {
     private var apiKey: String {
-        "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"
-//        "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"
+        ""
     }
     
     private var headers: [String: String] {
