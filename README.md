@@ -8,4 +8,4 @@ It is also able to render response with markdown and code syntax highlighting.
 
 Xcode 14
 Register at openai.com/api
-Create API Key from either OpenAI
+Create API Key from either OpenAI.
