@@ -7,19 +7,9 @@
 
 import Foundation
 
-struct MessageRow: Identifiable {
-    let id = UUID()
-    var isInteractingWithChatGPT: Bool
-    let sendImage: String
-    let sendText: String
-    let responseImage: String
-    var responseText: String?
-    var responseError: String?
-}
-
 struct AttributedOutput {
     let string: String
-//    let results: [ParserResult]
+    let results: [ParserResult]
 }
 
 enum MessageRowType {
@@ -34,4 +24,20 @@ enum MessageRowType {
             return string
         }
     }
+}
+
+struct MessageRow: Identifiable {
+    let id = UUID()
+    var isInteractingWithChatGPT: Bool
+    let sendImage: String
+    let send: MessageRowType
+    var sendText: String {
+        send.text
+    }
+    let responseImage: String
+    var response: MessageRowType?
+    var responseText: String? {
+        response?.text
+    }
+    var responseError: String?
 }

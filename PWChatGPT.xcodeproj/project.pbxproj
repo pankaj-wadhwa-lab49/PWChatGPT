@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		121971952A8780B700F832F4 /* CodeBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121971942A8780B700F832F4 /* CodeBlockView.swift */; };
+		121971972A8780F400F832F4 /* MarkdownAttributedStringParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121971962A8780F400F832F4 /* MarkdownAttributedStringParser.swift */; };
+		121971992A8781AD00F832F4 /* ParserResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121971982A8781AD00F832F4 /* ParserResult.swift */; };
+		1219719B2A8781FF00F832F4 /* ResponseParsingTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1219719A2A8781FF00F832F4 /* ResponseParsingTask.swift */; };
 		1261C1F62A853CB8007F6C0E /* MessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261C1F52A853CB8007F6C0E /* MessageRow.swift */; };
 		1261C1F82A853FCE007F6C0E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261C1F72A853FCE007F6C0E /* ViewModel.swift */; };
 		1261C1FA2A8541FE007F6C0E /* DotLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261C1F92A8541FE007F6C0E /* DotLoadingView.swift */; };
@@ -21,6 +25,8 @@
 		1261C2142A863FCC007F6C0E /* MessageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261C1FB2A8545D6007F6C0E /* MessageRowView.swift */; };
 		1261C2152A863FCC007F6C0E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB3A4E52A837CC900DF02D2 /* ContentView.swift */; };
 		1261C2162A863FCC007F6C0E /* DotLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261C1F92A8541FE007F6C0E /* DotLoadingView.swift */; };
+		1261C2192A867D91007F6C0E /* Markdown in Frameworks */ = {isa = PBXBuildFile; productRef = 1261C2182A867D91007F6C0E /* Markdown */; };
+		12C3B5932A878B7700EA63B5 /* Highlighter in Frameworks */ = {isa = PBXBuildFile; productRef = 12C3B5922A878B7700EA63B5 /* Highlighter */; };
 		2CB3A4E42A837CC900DF02D2 /* PWChatGPTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB3A4E32A837CC900DF02D2 /* PWChatGPTApp.swift */; };
 		2CB3A4E62A837CC900DF02D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB3A4E52A837CC900DF02D2 /* ContentView.swift */; };
 		2CB3A4E82A837CCB00DF02D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB3A4E72A837CCB00DF02D2 /* Assets.xcassets */; };
@@ -50,6 +56,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		121971942A8780B700F832F4 /* CodeBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBlockView.swift; sourceTree = "<group>"; };
+		121971962A8780F400F832F4 /* MarkdownAttributedStringParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownAttributedStringParser.swift; sourceTree = "<group>"; };
+		121971982A8781AD00F832F4 /* ParserResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserResult.swift; sourceTree = "<group>"; };
+		1219719A2A8781FF00F832F4 /* ResponseParsingTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseParsingTask.swift; sourceTree = "<group>"; };
 		1261C1F52A853CB8007F6C0E /* MessageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRow.swift; sourceTree = "<group>"; };
 		1261C1F72A853FCE007F6C0E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		1261C1F92A8541FE007F6C0E /* DotLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotLoadingView.swift; sourceTree = "<group>"; };
@@ -87,6 +97,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12C3B5932A878B7700EA63B5 /* Highlighter in Frameworks */,
+				1261C2192A867D91007F6C0E /* Markdown in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +206,9 @@
 				2CB3A5122A83CCE800DF02D2 /* ChatGPTAPIModels.swift */,
 				1261C1F52A853CB8007F6C0E /* MessageRow.swift */,
 				1261C1F72A853FCE007F6C0E /* ViewModel.swift */,
+				121971962A8780F400F832F4 /* MarkdownAttributedStringParser.swift */,
+				121971982A8781AD00F832F4 /* ParserResult.swift */,
+				1219719A2A8781FF00F832F4 /* ResponseParsingTask.swift */,
 			);
 			path = HelperClasses;
 			sourceTree = "<group>";
@@ -204,6 +219,7 @@
 				2CB3A4E52A837CC900DF02D2 /* ContentView.swift */,
 				1261C1FB2A8545D6007F6C0E /* MessageRowView.swift */,
 				1261C1F92A8541FE007F6C0E /* DotLoadingView.swift */,
+				121971942A8780B700F832F4 /* CodeBlockView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -241,6 +257,10 @@
 			dependencies = (
 			);
 			name = PWChatGPT;
+			packageProductDependencies = (
+				1261C2182A867D91007F6C0E /* Markdown */,
+				12C3B5922A878B7700EA63B5 /* Highlighter */,
+			);
 			productName = PWChatGPT;
 			productReference = 2CB3A4E02A837CC900DF02D2 /* PWChatGPT.app */;
 			productType = "com.apple.product-type.application";
@@ -316,6 +336,10 @@
 				Base,
 			);
 			mainGroup = 2CB3A4D72A837CC900DF02D2;
+			packageReferences = (
+				1261C2172A867D91007F6C0E /* XCRemoteSwiftPackageReference "swift-markdown" */,
+				12C3B5912A878B7700EA63B5 /* XCRemoteSwiftPackageReference "HighlighterSwift" */,
+			);
 			productRefGroup = 2CB3A4E12A837CC900DF02D2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -385,10 +409,14 @@
 			files = (
 				2CB3A50F2A83998B00DF02D2 /* ChatGPTAPI.swift in Sources */,
 				1261C1FA2A8541FE007F6C0E /* DotLoadingView.swift in Sources */,
+				1219719B2A8781FF00F832F4 /* ResponseParsingTask.swift in Sources */,
+				121971992A8781AD00F832F4 /* ParserResult.swift in Sources */,
 				2CB3A4E62A837CC900DF02D2 /* ContentView.swift in Sources */,
 				2CB3A5132A83CCE800DF02D2 /* ChatGPTAPIModels.swift in Sources */,
 				2CB3A4E42A837CC900DF02D2 /* PWChatGPTApp.swift in Sources */,
 				1261C1F82A853FCE007F6C0E /* ViewModel.swift in Sources */,
+				121971972A8780F400F832F4 /* MarkdownAttributedStringParser.swift in Sources */,
+				121971952A8780B700F832F4 /* CodeBlockView.swift in Sources */,
 				1261C1F62A853CB8007F6C0E /* MessageRow.swift in Sources */,
 				1261C1FC2A8545D6007F6C0E /* MessageRowView.swift in Sources */,
 			);
@@ -805,6 +833,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1261C2172A867D91007F6C0E /* XCRemoteSwiftPackageReference "swift-markdown" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-markdown";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		12C3B5912A878B7700EA63B5 /* XCRemoteSwiftPackageReference "HighlighterSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pankajW/HighlighterSwift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1261C2182A867D91007F6C0E /* Markdown */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1261C2172A867D91007F6C0E /* XCRemoteSwiftPackageReference "swift-markdown" */;
+			productName = Markdown;
+		};
+		12C3B5922A878B7700EA63B5 /* Highlighter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 12C3B5912A878B7700EA63B5 /* XCRemoteSwiftPackageReference "HighlighterSwift" */;
+			productName = Highlighter;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2CB3A4D82A837CC900DF02D2 /* Project object */;
 }
